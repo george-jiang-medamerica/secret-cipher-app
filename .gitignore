@@ -36,6 +36,43 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-# generated native folders
+# iOS (if generated)
 /ios
-/android
+
+# Android build outputs and large files
+android/app/build/
+android/build/
+android/.gradle/
+android/app/.cxx/
+android/local.properties
+android/*.iml
+android/.idea/
+android/captures/
+android/gradle/
+android/gradlew
+android/gradlew.bat
+
+# Keep android source files but exclude large build artifacts
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Large binary files
+*.so
+*.jar
+*.aar
+
+# Gradle cache
+.gradle/
+**/build/
+
+# Android Studio
+*.iml
+.idea/
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+local.properties
