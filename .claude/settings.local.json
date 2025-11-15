@@ -51,7 +51,9 @@
       "Bash(.androidgradlew.bat -p android assembleRelease)",
       "Bash(powershell.exe -Command \"cd android; .\\gradlew.bat assembleRelease\")",
       "Bash(adb:*)",
-      "Bash(powershell.exe:*)"
+      "Bash(powershell.exe:*)",
+      "Bash(adb:$DEVICE install \"android\\app\\build\\outputs\\apk\\release\\app-release.apk\")",
+      "Bash(npx @expo/configure-splash-screen:*)"
     ],
     "deny": [],
     "ask": []
